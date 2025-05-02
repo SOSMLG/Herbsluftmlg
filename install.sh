@@ -9,4 +9,6 @@ sudo apt update && sudo apt install -y \
     firmware-iwlwifi firmware-misc-nonfree libxcb-res0-dev libx11-xcb-dev \
     fonts-arabeyes fonts-kacst fonts-kacst-one fonts-sil-scheherazade fonts-sil-lateef \
     polybar rofi \
+# oh my bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
