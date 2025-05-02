@@ -7,5 +7,6 @@ sudo apt update && sudo apt install -y \
     papirus-icon-theme exa maim dunst xdotool unzip micro geany geany-plugins redshift \
     firefox-esr vlc fonts-font-awesome fonts-terminus libnotify-bin sddm \
     firmware-iwlwifi firmware-misc-nonfree libxcb-res0-dev libx11-xcb-dev \
-    fonts-arabeyes fonts-kacst fonts-kacst-one fonts-sil-scheherazade fonts-sil-lateef
+    fonts-arabeyes fonts-kacst fonts-kacst-one fonts-sil-scheherazade fonts-sil-lateef \
+    polybar rofi \
 
