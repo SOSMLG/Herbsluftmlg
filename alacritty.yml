@@ -1,0 +1,59 @@
+# ~/.config/alacritty/alacritty.yml
+
+# Font
+font:
+  normal:
+    family: "JetBrainsMono Nerd Font"
+    style: Regular
+  bold:
+    family: "JetBrainsMono Nerd Font"
+    style: Bold
+  italic:
+    family: "JetBrainsMono Nerd Font"
+    style: Italic
+  size: 11.0
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+# Colors (neon-cyberpunk palette)
+colors:
+  # Default
+  primary:
+    background: '0x1f102b'    # deep purple-blue
+    foreground: '0xe0f7ff'    # soft cyan-white
+
+  # Normal colors
+  normal:
+    black:   '0x1f102b'
+    red:     '0xff3399'
+    green:   '0x00e5ff'
+    yellow:  '0xff00ff'
+    blue:    '0x00ffff'
+    magenta: '0xff3399'
+    cyan:    '0x00e5ff'
+    white:   '0xe0f7ff'
+
+  # Bright colors
+  bright:
+    black:   '0x555566'
+    red:     '0xff66aa'
+    green:   '0x66ffff'
+    yellow:  '0xff66ff'
+    blue:    '0x66ffff'
+    magenta: '0xff66aa'
+    cyan:    '0x66ffff'
+    white:   '0xffffff'
+
+  # Cursor
+  cursor:
+    text:    '0x1f102b'
+    cursor:  '0xff00ff'
+
+  # Selection
+  selection:
+    text:       '0x1f102b'
+    background: '0xff00ff'
