@@ -93,6 +93,8 @@ hc keybind $Mod-Control-j      resize down  +$resizestep
 hc keybind $Mod-Control-k      resize up    +$resizestep
 hc keybind $Mod-Control-Control-h resize left  +$resizestep
 hc keybind $Mod-Control-Control-l resize right +$resizestep
+hc keybind $Mod-space cycle_layout +1 vertical horizontal max grid
+hc keybind $Mod-Shift-space cycle_layout -1 vertical horizontal max grid
 
 # ───── tags 1–9 ─────────────────────────────────────────────────────────
 

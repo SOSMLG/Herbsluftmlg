@@ -1,35 +1,31 @@
-/* ~/.config/rofi/theme.rasi */
-
-/* Tell Rofi to show icons, and which icon theme to use */
 configuration {
     show-icons: true;
-    icon-theme: "Papirus";    /* or your preferred GTK icon theme name */
+    icon-theme: "Papirus";
     icon-size: 14px;
 }
 
 * {
-    /* Font */
     font: "Iosevka Nerd Font Medium 11";
 
-    /* Alacritty neon-cyberpunk palette */
-    bg0     : #1f102b;
+    /* Neon cyberpunk palette */
+    bg0     : #1f102b;   /* Background */
     bg1     : #1f102b;
     bg2     : #1f102b;
-    bg3     : #555566;
+    bg3     : #2c1f3a;   /* Slightly lighter border */
 
-    fg0     : #e0f7ff;
+    fg0     : #e0f7ff;   /* Foreground */
     fg1     : #e0f7ff;
     fg2     : #555566;
 
-    red     : #ff3399;
-    green   : #00e5ff;
-    yellow  : #ff00ff;
-    blue    : #00ffff;
+    red     : #ff3399;   /* Hot pink */
+    green   : #00e5ff;   /* Cyan-green */
+    yellow  : #ff00ff;   /* Magenta */
+    blue    : #00ffff;   /* Bright cyan-blue */
     magenta : #ff3399;
     cyan    : #00e5ff;
 
-    accent  : @red;
-    urgent  : @yellow;
+    accent  : @blue;     /* Blue as main accent */
+    urgent  : @red;      /* Hot pink as urgent */
 
     background-color : transparent;
     text-color       : @fg0;
@@ -114,7 +110,7 @@ element selected urgent {
 
 element-icon {
     size: 0.8em;
-    show: true;       /* ensure element-icon actually renders */
+    show: true;
 }
 
 element-text {
@@ -123,6 +119,6 @@ element-text {
 
 scrollbar {
     handle-width : 4px;
-    handle-color : @fg2;
+    handle-color : @blue;
     padding      : 0 4px;
 }
