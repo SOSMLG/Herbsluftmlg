@@ -28,6 +28,7 @@ cp mlgtokyo.rasi ~/.config/rofi/themes/
 cp modules.ini ~/.config/polybar/modules.ini
 cp config.ini ~/.config/polybar/config.ini
 cp colors.ini ~/.config/polybar/colors.ini
+cp bashrc ~/.bashrc
 
 echo "Actiavting Services"
 sudo ln -sf /etc/sv/dbus /var/service
