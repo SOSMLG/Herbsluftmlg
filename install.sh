@@ -17,11 +17,11 @@ sudo apt update && sudo apt install -y \
 
 echo "Actiavting Services"
 sudo ln -sf /etc/sv/dbus /var/service
-sudo ln -sf /etc/sv/NetworkManager /var/service
-sudo ln -sf /etc/sv/lightdm /var/service 
+sudo ln -sf /etc/sv/network-manager /var/service
+sudo ln -sf /etc/sv/sddm /var/service 
 sudo sv up dbus
-sudo sv up lightdm 
-sudo sv up NetworkManager
+sudo sv up sdddm 
+sudo sv up network-manager
 
 echo "🎨 Creating fonts directory..."
 mkdir -p ~/.local/share/fonts
