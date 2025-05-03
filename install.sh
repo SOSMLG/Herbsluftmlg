@@ -20,7 +20,7 @@ sudo ln -sf /etc/sv/dbus /var/service
 sudo ln -sf /etc/sv/network-manager /var/service
 sudo ln -sf /etc/sv/sddm /var/service 
 sudo sv up dbus
-sudo sv up sdddm 
+sudo sv up sddm 
 sudo sv up network-manager
 
 echo "🎨 Creating fonts directory..."
