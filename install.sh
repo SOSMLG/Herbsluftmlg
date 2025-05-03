@@ -15,6 +15,14 @@ sudo apt update && sudo apt install -y \
     fonts-arabeyes fonts-kacst fonts-kacst-one fonts-sil-scheherazade fonts-sil-lateef \
     polybar rofi fonts-noto-color-emoji curl wget ranger brightnessctl zathura zathura-pdf-poppler
 
+echo "Actiavting Services"
+sudo ln -sf /etc/sv/dbus /var/service
+sudo ln -sf /etc/sv/NetworkManager /var/service
+sudo ln -sf /etc/sv/lightdm /var/service 
+sudo sv up dbus
+sudo sv up lightdm 
+sudo sv up NetworkManager
+
 echo "🎨 Creating fonts directory..."
 mkdir -p ~/.local/share/fonts
 
