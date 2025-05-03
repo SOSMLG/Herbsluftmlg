@@ -15,6 +15,20 @@ sudo apt update && sudo apt install -y \
     fonts-arabeyes fonts-kacst fonts-kacst-one fonts-sil-scheherazade fonts-sil-lateef \
     polybar rofi fonts-noto-color-emoji curl wget ranger brightnessctl zathura zathura-pdf-poppler
 
+echo "Creating Files"
+mkdir ~/.config/polybar
+mkdir ~/.config/alacritty  
+mkdir ~/.config/rofi/themes
+mkdir ~/.config/herbstluftwm
+echo "Copying Configs To The its Location"
+cp alacritty.yml ~/.config/alacritty/alacritty.yml
+cp autostart ~/.config/herbstluftwm/autostart
+cp config.rasi ~/.config/rofi/
+cp mlgtokyo.rasi ~/.config/rofi/themes/
+cp modules.ini ~/.config/polybar/modules.ini
+cp config.ini ~/.config/polybar/config.ini
+cp colors.ini ~/.config/polybar/colors.ini
+
 echo "Actiavting Services"
 sudo ln -sf /etc/sv/dbus /var/service
 sudo ln -sf /etc/sv/network-manager /var/service
