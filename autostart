@@ -11,6 +11,7 @@ xsetroot -solid '#1f102b'
 feh --bg-fill wallpaper.jpg &
 picom -b &
 polybar &
+~/.config/polybar/launch.sh  --colorblocks &
 
 # remove all existing keybindings
 hc keyunbind --all
