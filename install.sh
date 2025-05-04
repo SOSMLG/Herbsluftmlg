@@ -22,6 +22,7 @@ mkdir ~/.config/rofi
 mkdir ~/.config/rofi/themes
 mkdir ~/.config/herbstluftwm
 echo "Copying Configs To The its Location"
+chmod +x autostart
 cp alacritty.yml ~/.config/alacritty/alacritty.yml
 cp autostart ~/.config/herbstluftwm/autostart
 cp config.rasi ~/.config/rofi/
