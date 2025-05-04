@@ -17,7 +17,8 @@ sudo apt update && sudo apt install -y \
 
 echo "Creating Files"
 mkdir ~/.config/polybar
-mkdir ~/.config/alacritty  
+mkdir ~/.config/alacritty
+mkdir ~/.config/rofi  
 mkdir ~/.config/rofi/themes
 mkdir ~/.config/herbstluftwm
 echo "Copying Configs To The its Location"
@@ -28,7 +29,7 @@ cp mlgtokyo.rasi ~/.config/rofi/themes/
 cp modules.ini ~/.config/polybar/modules.ini
 cp config.ini ~/.config/polybar/config.ini
 cp colors.ini ~/.config/polybar/colors.ini
-cp bashrc ~/.bashrc
+cp .bashrc ~/.bashrc
 
 echo "Actiavting Services"
 sudo ln -sf /etc/sv/dbus /var/service
