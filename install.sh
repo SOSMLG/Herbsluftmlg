@@ -10,7 +10,7 @@ sudo apt update && sudo apt install -y \
     thunar-archive-plugin thunar-volman xarchiver lxappearance dialog mtools avahi-daemon \
     acpi acpid gvfs xfce4-power-manager pulseaudio pavucontrol pulsemixer feh \
     papirus-icon-theme exa maim dunst xdotool unzip micro geany geany-plugins redshift \
-    firefox-esr vlc fonts-font-awesome fonts-terminus libnotify-bin sddm \
+    firefox-esr vlc fonts-font-awesome fonts-terminus libnotify-bin \
     firmware-iwlwifi firmware-misc-nonfree libxcb-res0-dev libx11-xcb-dev \
     fonts-arabeyes fonts-kacst fonts-kacst-one fonts-sil-scheherazade fonts-sil-lateef \
     polybar rofi fonts-noto-color-emoji curl wget ranger brightnessctl zathura zathura-pdf-poppler
@@ -35,9 +35,9 @@ cp .bashrc ~/.bashrc
 echo "Actiavting Services"
 sudo ln -sf /etc/sv/dbus /var/service
 sudo ln -sf /etc/sv/network-manager /var/service
-sudo ln -sf /etc/sv/sddm /var/service 
+sudo ln -sf /etc/sv/lightdm /var/service 
 sudo sv up dbus
-sudo sv up sddm 
+sudo sv up lightdm
 sudo sv up network-manager
 
 echo "🎨 Creating fonts directory..."
